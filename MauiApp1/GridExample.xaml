@@ -1,33 +1,123 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiApp1.GridExample"
-             Title="GridExample">
+<ContentPage
+    x:Class="MauiApp1.GridExample"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="GridExample">
 
-    <Grid Margin="10" RowDefinitions="2*,5*,*" ColumnDefinitions="*">
+    <Grid
+        Margin="10"
+        ColumnDefinitions="*"
+        RowDefinitions="2*,5*,*">
 
-        <Label Grid.Row="0" Grid.Column="0" BackgroundColor="YellowGreen">
-            
-        </Label>
-        <Grid Grid.Row="1" RowDefinitions="*,*,*" ColumnDefinitions="*,*,*,*">
-            
-            <Button Grid.Column="0" Grid.Row="0" BackgroundColor="DodgerBlue" Margin="5" Text=""/>
-            <Button Grid.Column="1" Grid.Row="0" BackgroundColor="DodgerBlue" Margin="5"/>
-            <Button Grid.Column="2" Grid.Row="0" BackgroundColor="DodgerBlue" Margin="5"/>
-            <Button Grid.Column="3" Grid.Row="0" BackgroundColor="DodgerBlue" Margin="5"/>
-            <Button Grid.Column="0" Grid.Row="1" BackgroundColor="DodgerBlue" Margin="5"/>
-            <Button Grid.Column="1" Grid.Row="1" BackgroundColor="DodgerBlue" Margin="5"/>
-            <Button Grid.Column="2" Grid.Row="1" BackgroundColor="DodgerBlue" Margin="5"/>
-            <Button Grid.Column="3" Grid.Row="1" BackgroundColor="DodgerBlue" Margin="5"/>
-            <Button Grid.Column="0" Grid.Row="2" BackgroundColor="DodgerBlue" Margin="5"/>
-            <Button Grid.Column="1" Grid.Row="2" BackgroundColor="DodgerBlue" Margin="5"/>
-            <Button Grid.Column="2" Grid.Row="2" BackgroundColor="DodgerBlue" Margin="5"/>
-            <Button Grid.Column="3" Grid.Row="2" BackgroundColor="DodgerBlue" Margin="5"/>
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            BackgroundColor="Gray" />
+        <Grid
+            Grid.Row="1"
+            ColumnDefinitions="*,*,*,*"
+            RowDefinitions="*,*,*">
+
+            <Button
+                x:Name="a1"
+                Grid.Row="0"
+                Grid.Column="0"
+                Margin="5"
+                BackgroundColor="CadetBlue"
+                Text="1"
+                Clicked="a1_Clicked"/>
+            <Button
+                  x:Name="a2"
+                Grid.Row="0"
+                Grid.Column="1"
+                Margin="5"
+                BackgroundColor="CadetBlue"
+                Text="2"
+                Clicked="a2_Clicked"/>
+            <Button
+                  x:Name="a3"
+                Grid.Row="0"
+                Grid.Column="2"
+                Margin="5"
+                BackgroundColor="CadetBlue"
+                Text="3"
+                Clicked="a3_Clicked"/>
+            <Button
+                  x:Name="Minus"
+                Grid.Row="0"
+                Grid.Column="3"
+                Margin="5"
+                BackgroundColor="CadetBlue"
+                Text="-"
+                Clicked="Minus_Clicked"/>
+            <Button
+                  x:Name="a4"
+                Grid.Row="1"
+                Grid.Column="0"
+                Margin="5"
+                BackgroundColor="CadetBlue"
+                Text="4" />
+            <Button
+                  x:Name="a5"
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="5"
+                BackgroundColor="CadetBlue"
+                Text="5" />
+            <Button
+                  x:Name="a6"
+                Grid.Row="1"
+                Grid.Column="2"
+                Margin="5"
+                BackgroundColor="CadetBlue"
+                Text="6" />
+            <Button
+                  x:Name="plus"
+                Grid.Row="1"
+                Grid.Column="3"
+                Margin="5"
+                BackgroundColor="CadetBlue"
+                Text="+" />
+            <Button
+                  x:Name="a7"
+                Grid.Row="2"
+                Grid.Column="0"
+                Margin="5"
+                BackgroundColor="CadetBlue"
+                Text="7" />
+            <Button
+                  x:Name="a8"
+                Grid.Row="2"
+                Grid.Column="1"
+                Margin="5"
+                BackgroundColor="CadetBlue"
+                Text="8" />
+            <Button
+                  x:Name="a9"
+                Grid.Row="2"
+                Grid.Column="2"
+                Margin="5"
+                BackgroundColor="CadetBlue"
+                Text="9" />
+            <Button
+                  x:Name="a0"
+                Grid.Row="2"
+                Grid.Column="3"
+                Margin="5"
+                BackgroundColor="CadetBlue"
+                Text="0" />
         </Grid>
-        <Button Grid.Row="2" Grid.ColumnSpan="4" WidthRequest="300" BackgroundColor="CadetBlue" Text="=" FontSize="50" HorizontalOptions="Center" VerticalOptions="Center">
-            
-        </Button>
-        
-        
+        <Button
+            Grid.Row="2"
+            Grid.ColumnSpan="4"
+            BackgroundColor="DarkBlue"
+            FontSize="50"
+            HorizontalOptions="Center"
+            Text="="
+            VerticalOptions="Center"
+            WidthRequest="300" />
+
+
     </Grid>
 </ContentPage>
